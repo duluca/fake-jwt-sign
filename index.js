@@ -1,3 +1,5 @@
+var CryptoJS = require('ts.cryptojs256');
+
 function base64url(source) {
   // Encode in classical base64
   encodedSource = CryptoJS.enc.Base64.stringify(source)
@@ -12,7 +14,7 @@ function base64url(source) {
   return encodedSource
 }
 
-export function sign(data, secret, options) {
+function sign(data, secret, options) {
   if(!options) {
     options = {}
   }
@@ -33,4 +35,8 @@ export function sign(data, secret, options) {
   signature = CryptoJS.HmacSHA256(signature, secret)
   signature = base64url(signature)
   return `${encodedHeader}.${encodedData}.${signature}`
+}
+
+module.exports = {
+  sign: sign
 }

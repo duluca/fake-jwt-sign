@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/duluca/fake-jwt-sign/issues"
   },
-  "homepage": "https://github.com/duluca/fake-jwt-sign#readme"
+  "homepage": "https://github.com/duluca/fake-jwt-sign#readme",
+  "dependencies": {
+    "ts.cryptojs256": "^1.0.1"
+  }
 }
