@@ -1,0 +1,24 @@
+{
+  "name": "fake-jwt-sign",
+  "version": "1.0.0",
+  "description": "A basic JWT sign method, meant for browser-side testing and dummy implementations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duluca/fake-jwt-sign.git"
+  },
+  "keywords": [
+    "fake",
+    "jwt",
+    "sign"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duluca/fake-jwt-sign/issues"
+  },
+  "homepage": "https://github.com/duluca/fake-jwt-sign#readme"
+}
