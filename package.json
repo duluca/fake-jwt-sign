@@ -1,6 +1,6 @@
 {
   "name": "fake-jwt-sign",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A basic JWT sign method, meant for browser-side testing and dummy implementations",
   "main": "index.js",
   "scripts": {
