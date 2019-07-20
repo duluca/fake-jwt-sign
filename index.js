@@ -2,7 +2,7 @@ var CryptoJS = require('ts.cryptojs256');
 
 function base64url(source) {
   // Encode in classical base64
-  encodedSource = CryptoJS.enc.Base64.stringify(source)
+  let encodedSource = CryptoJS.enc.Base64.stringify(source)
 
   // Remove padding equal characters
   encodedSource = encodedSource.replace(/=+$/, '')
@@ -15,7 +15,8 @@ function base64url(source) {
 }
 
 function sign(data, secret, options) {
-  if(!options) {
+  console.warn('fake-jwt-sign package is for educational purposes only. DO NOT USE IN PRODUCTION CODE!')
+  if (!options) {
     options = {}
   }
 
